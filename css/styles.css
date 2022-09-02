@@ -11,10 +11,7 @@ html {
     float:left; 
     flex-direction: row;
     width:30%;
-    height:100vh;
-    
-    
-    
+    height:100vh; 
 }
 
 .header__title {
@@ -95,11 +92,58 @@ html {
 
 .summary__language {
     width:20%;
-    background-image: url(../images/wave.jpg);
-    background-position: center center;
-    margin-left:1.4rem;
+    background: repeating-linear-gradient(
+        to bottom,
+        rgb(248, 206, 178) 0px,
+        rgb(248, 206, 178) 5px,
+        white 5px,
+        white 10px);
+    
     
 }
+
+.language__title {
+    color:black;
+    text-align: center;
+    font-size: 1.2rem;
+    padding:1rem;
+    font-weight: bolder;
+    background-color: aliceblue;
+}
+
+.language__flags {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+    
+    
+}
+
+.language__flags-fr {
+    width: 35%;
+    filter: grayscale(70%);
+}
+
+.language__flags-uk {
+    width: 35%;
+    filter: grayscale(70%);
+}
+
+.language__flags-fr:hover {
+    width: 35%;
+    filter: none;
+}
+
+.language__flags-uk:hover {
+    width: 35%;
+    filter: none;
+}
+
+
 
 
 .summary__subtitle {
@@ -238,4 +282,139 @@ html {
     margin-bottom:2rem;
     color:rgb(255, 138, 60);
     padding-top:1rem;
+}
+
+.interests__container {
+
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+    
+}
+
+.interests__ecologie {
+    grid-row: 1 / 20;
+    grid-column: 17 / 20;
+    text-align: center;
+    background-color: rgb(138, 247, 128);
+    text-align: justify;
+    color: white;
+    padding:0.5rem;
+
+    
+}
+
+.interests__ecologie:hover {
+    background-color: rgb(50, 37, 17);
+}
+
+.ecologie__title {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    
+}
+
+.ecologie__descr {
+    line-height:1.5rem;
+    text-align: left;
+    
+}
+
+.interests__course {
+    grid-row: 1 / 5;
+    grid-column: 1 / 7;
+    text-align: center;
+    background-color: rgb(192, 26, 26);
+    text-align: justify;
+    color: white;
+    padding:0.5rem;
+
+}
+
+.interests__bretagne {
+    grid-row: 1 / 5;
+    grid-column: 9 /16 ;
+    text-align: center;
+    background-color: black;
+    text-align: justify;
+    color: white;
+    padding:0.5rem;
+
+}
+
+.interests__course-strava {
+    background-image: url(../images/strava.png);
+    background-position: center center;
+    background-size: cover;
+    grid-row: 1 / 5;
+    grid-column: 7 / 9;
+    transition-duration: 0.7s;
+
+}
+
+.interests__course-strava:hover {
+    transform: scale(1.5);
+}
+
+.interests__bretagne-logo {
+    grid-row: 1 / 5;
+    grid-column: 16 / 17;
+    background: repeating-linear-gradient(
+    to bottom,
+    black 0px,
+    black 10px,
+    white 10px,
+    white 20px
+  );
+    height:100%;
+
+}
+
+.interests__GR34-2 {
+    background-image: url(../images/wave1-removebg-preview.png);
+    background-position: center center;
+    background-size: cover;
+    grid-row: 10 / 20;
+    grid-column: 1 / 17;
+    transition-duration: 0.7s;
+    
+}
+
+.interests__GR34-2:hover {
+    transform: scale(1.1);
+
+    
+}
+
+.interests__GR34 {
+
+    grid-row: 5 / 10;
+    grid-column: 1 / 17;
+    color:black;
+      
+}
+
+.GR34__title {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    text-align:center;
+}
+
+.GR34__descr {
+    line-height: 1.2rem;
+    padding: 1rem;
+    text-align:justify;
+
+}
+
+.GR34__subtitle {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    text-align:center;
+    font-style: italic;
 }
