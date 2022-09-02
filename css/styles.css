@@ -1,0 +1,241 @@
+html {
+    font-family: 'Arvo', serif;
+   
+    
+}
+
+.header {
+    
+    display: flex;
+    background-color:aqua;
+    float:left; 
+    flex-direction: row;
+    width:30%;
+    height:100vh;
+    
+    
+    
+}
+
+.header__title {
+    background-color: lightcyan;
+    width:50%;
+    color:rgb(255, 138, 60);
+    height: 100%;
+    font-size: 3rem;
+    writing-mode:vertical-lr;
+}
+
+.header__subtitle {
+    background-color: rgb(1, 1, 77);
+    width:50%;
+    color:rgb(255, 253, 246);
+    height: 100%;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: right;
+    padding: 19rem 0.5rem 0 0;
+    box-sizing: border-box;
+    position: relative;
+ 
+}
+
+.header__photo  {
+    width:100%;
+    position: absolute;
+    bottom:0rem;
+    left:0;
+    
+}
+
+.header__photo--dark  {
+    width:100%;
+    position: absolute;
+    bottom:0rem;
+    left:0;
+    
+}
+
+.header__photo--dark:hover  {
+    display:none;
+    transition-duration: 2s;
+    
+    
+    
+}
+
+
+
+.summary {
+    float:left;
+    width: 70%;
+    overflow-y: auto;
+    height: 100vh;
+    
+    
+
+}
+
+.summary__header {
+    display:flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.summary__title {
+    background: rgb(248, 206, 178);
+    color: rgb(1, 1, 77);
+    font-size: 1.3rem;
+    padding:1.3rem;
+    width:80%;
+    line-height: 2.6rem;
+    text-align: justify;
+    
+}
+
+.summary__language {
+    width:20%;
+    background-image: url(../images/wave.jpg);
+    background-position: center center;
+    margin-left:1.4rem;
+    
+}
+
+
+.summary__subtitle {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    
+}
+
+
+.summary__exp {
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    float: right;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 2px solid rgb(255, 138, 60);
+    box-sizing: border-box;
+
+}
+
+.exp__date {
+    font-weight: bold;
+    width:5%;
+    writing-mode:vertical-lr;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: center;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    height: 8rem;
+   
+}
+
+.exp__img , .exp__img--maths {
+
+    width:10%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    transition: transform .7s ease-in-out;
+
+}
+
+.exp__img:hover {
+    transform: rotate(360deg);
+}
+
+.exp__img--maths:hover {
+    transform: scale(0.2);
+}
+
+
+.exp__title {
+    
+    width:20%; 
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    font-weight: bold;
+    
+
+
+}
+
+.exp__presentation {
+    width:65%; 
+    text-align: justify;
+    font-size: 1rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    vertical-align: middle;
+    
+}
+
+.side { 
+    background-color: lightcyan;
+    float:right; 
+    width:40%;
+    height:30rem;
+}
+
+.side__title {
+    display:block;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    margin-bottom:2rem;
+    padding-top:1rem;
+}
+
+.side__projects {
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 0.8rem;
+
+}
+
+.projects__img {
+    width:10%;
+    padding:0.5rem;
+    box-sizing: border-box;
+
+}
+
+.projects__title {
+    width:20%;
+    padding:0.5rem;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.projects__descr {
+    width:70%;
+    padding:0.5rem;
+    box-sizing: border-box;
+}
+
+.interests {
+    float:left; 
+    width:60%;
+    height:30rem;
+
+}
+
+.interests__title {
+    display:block;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    margin-bottom:2rem;
+    color:rgb(255, 138, 60);
+    padding-top:1rem;
+}
